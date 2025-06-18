@@ -1,134 +1,130 @@
-/* css/style.css */
-
+/* Base styles */
 body {
-  margin: 0;
-  font-family: 'Noto Nastaliq Urdu', 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #fff0f5, #e6e6fa);
+  font-family: 'Noto Nastaliq Urdu', serif;
+  background: #fffaf7;
   color: #333;
-  direction: rtl;
+  margin: 0;
+  padding: 0;
+  line-height: 2;
 }
 
+/* Container */
 .container {
-  width: 90%;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: auto;
   padding: 20px;
 }
 
+/* Header */
 header {
-  background: #8e44ad;
-  color: #fff;
+  background: linear-gradient(to right, #7b4397, #dc2430);
+  color: white;
+  padding: 50px 20px;
   text-align: center;
-  padding: 30px 0;
-  border-bottom: 5px solid #5e3370;
+  border-bottom: 5px solid #fff0f5;
 }
 
 header h1 {
-  font-size: 2.8em;
-  margin: 0;
-}
-
-header p {
-  font-size: 1.4em;
-  margin-top: 10px;
-}
-
-nav {
-  background: #f2e6ff;
-  border-bottom: 2px solid #ccc;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-  list-style: none;
-  gap: 20px;
-}
-
-nav ul li a {
-  color: #6a1b9a;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 8px 15px;
-  border-radius: 6px;
-  transition: background 0.3s;
-}
-
-nav ul li a:hover {
-  background: #e1bee7;
-}
-
-.section {
-  padding: 40px 0;
-  background: #fff;
-  border-bottom: 1px solid #ddd;
-}
-
-.about {
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 30px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.profile {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-h2 {
-  color: #6a1b9a;
-  margin-bottom: 20px;
-  font-size: 2em;
-  border-bottom: 3px solid #6a1b9a;
-  padding-bottom: 10px;
-}
-
-.books li {
-  font-size: 1.2em;
-  margin: 10px 0;
-}
-
-.poem {
-  background: #f3e5f5;
-  border-left: 5px solid #8e44ad;
-  padding: 15px 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-}
-
-.poem p:first-child {
-  font-weight: bold;
+  font-size: 3rem;
   margin-bottom: 10px;
 }
 
-a {
-  color: #6a1b9a;
+header p {
+  font-size: 1.5rem;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-footer {
-  background: #4a148c;
-  color: white;
+/* Navigation */
+nav {
+  background-color: #ffe4ec;
   text-align: center;
-  padding: 20px 0;
-  font-size: 0.9em;
+  padding: 15px 0;
+  border-bottom: 2px solid #ffc8dd;
 }
 
-@media (max-width: 768px) {
-  .about {
-    flex-direction: column;
-    align-items: center;
-  }
-  nav ul {
-    flex-direction: column;
-  }
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #8b1e4a;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Section styles */
+.section {
+  padding: 40px 20px;
+}
+
+h2 {
+  border-bottom: 3px solid #dc143c;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  color: #8b0000;
+}
+
+/* About Image */
+.profile {
+  width: 200px;
+  float: right;
+  margin-left: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Books List */
+.books {
+  list-style: none;
+  padding: 0;
+}
+
+.books li {
+  background: #fff0f5;
+  margin: 10px 0;
+  padding: 10px;
+  border-right: 5px solid #e75480;
+  font-size: 1.2rem;
+}
+
+/* Poetry */
+.poem {
+  background: #fcf8ff;
+  border-right: 5px solid #b565a7;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+.poem em {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+  font-family: 'Poppins', sans-serif;
+  color: #555;
+  direction: ltr;
+  text-align: left;
+}
+
+/* Footer */
+footer {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 25px;
+  font-size: 1rem;
+  color: #555;
+  border-top: 2px solid #ccc;
+}
+
+/* Links */
+a {
+  color: #8b1e4a;
 }
