@@ -1,0 +1,134 @@
+/* css/style.css */
+
+body {
+  margin: 0;
+  font-family: 'Noto Nastaliq Urdu', 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #fff0f5, #e6e6fa);
+  color: #333;
+  direction: rtl;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  background: #8e44ad;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 5px solid #5e3370;
+}
+
+header h1 {
+  font-size: 2.8em;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.4em;
+  margin-top: 10px;
+}
+
+nav {
+  background: #f2e6ff;
+  border-bottom: 2px solid #ccc;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #6a1b9a;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background: #e1bee7;
+}
+
+.section {
+  padding: 40px 0;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.about {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+h2 {
+  color: #6a1b9a;
+  margin-bottom: 20px;
+  font-size: 2em;
+  border-bottom: 3px solid #6a1b9a;
+  padding-bottom: 10px;
+}
+
+.books li {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.poem {
+  background: #f3e5f5;
+  border-left: 5px solid #8e44ad;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.poem p:first-child {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #6a1b9a;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #4a148c;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+}
